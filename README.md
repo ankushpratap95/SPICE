@@ -81,7 +81,7 @@ A CUDA-capable GPU is strongly recommended.
 
 ## Data Preparation
 
-SPICE follows the **same dataset preprocessing protocol as BSS** and **GeWU-Lab's OGM-GE** ([gewu-lab/ogm-ge_cvpr2022](https://github.com/gewu-lab/ogm-ge_cvpr2022)). Please refer to those repositories for downloading raw data and extracting frames/audio. After preprocessing, arrange the data so the loaders can find it, as described below.
+SPICE follows the **same dataset preprocessing protocol as **GeWU-Lab's OGM-GE** ([gewu-lab/ogm-ge_cvpr2022](https://github.com/gewu-lab/ogm-ge_cvpr2022)). Please refer to those repositories for downloading raw data and extracting frames/audio. After preprocessing, arrange the data so the loaders can find it, as described below.
 
 ### CREMA-D
 Expects (relative to `CREMA-D/`):
@@ -177,33 +177,19 @@ At inference, SPICE uses standard late fusion, summing the multimodal and unimod
 
 ---
 
-## Results
-
-Accuracy (%) / mAP or F1 (%) — SPICE-E is the best-performing variant across benchmarks.
-
-| Method | CREMA-D | Kinetics-Sounds | NVGesture | VGGSound |
-|--------|:-------:|:---------------:|:---------:|:--------:|
-| BSS-L (prev. best) | 82.80 / 88.61 | 73.95 / 79.43 | 86.72 / 87.04 | 52.80 / 56.61 |
-| **SPICE-S** | 80.91 / 86.76 | 72.41 / 78.07 | 86.51 / 86.77 | — |
-| **SPICE-E** | **83.06 / 89.07** | **73.99 / 79.48** | **87.14 / 87.36** | **54.98 / 56.63** |
-
-(CREMA-D / KS / VGGSound report ACC / mAP; NVGesture reports ACC / F1.) See the paper for the full baseline comparison.
-
----
-
 ## Citation
 
-SPICE has been accepted to **ACM ICMI '26**. Until the proceedings are published, please cite the arXiv preprint:
+Please cite the work:
 
 ```bibtex
-@misc{singh2026spice,
-  title         = {SPICE: Synergy and Partial Information Based Curriculum Evolution},
-  author        = {Singh, Ankush Pratap and Cao, Houwei and Liu, Yong},
-  year          = {2026},
-  eprint        = {2606.16639},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.LG},
-  url           = {https://arxiv.org/abs/2606.16639}
+@misc{singh2026spicesynergypartialinformation,
+      title={SPICE: Synergy and Partial Information Based Curriculum Evolution}, 
+      author={Ankush Pratap Singh and Houwei Cao and Yong Liu},
+      year={2026},
+      eprint={2606.16639},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2606.16639}, 
 }
 ```
 
@@ -223,7 +209,7 @@ SPICE has been accepted to **ACM ICMI '26**. Until the proceedings are published
 
 ## Acknowledgments
 
-Dataset preprocessing and evaluation protocols follow the **BSS** framework and **GeWU-Lab's OGM-GE** ([gewu-lab/ogm-ge_cvpr2022](https://github.com/gewu-lab/ogm-ge_cvpr2022)). We thank the authors of these works, as well as the maintainers of the CREMA-D, Kinetics-Sounds, NVGesture, and VGGSound datasets.
+Dataset preprocessing and evaluation protocols follow the **BSS**([njustkmg/IJCAI25-BSS](https://github.com/njustkmg/IJCAI25-BSS)) framework and **GeWU-Lab's OGM-GE** ([gewu-lab/ogm-ge_cvpr2022](https://github.com/gewu-lab/ogm-ge_cvpr2022)). We thank the authors of these works, as well as the maintainers of the CREMA-D, Kinetics-Sounds, NVGesture, and VGGSound datasets.
 
 ## License
 
