@@ -81,7 +81,7 @@ A CUDA-capable GPU is strongly recommended.
 
 ## Data Preparation
 
-SPICE follows the **same dataset preprocessing protocol as **GeWU-Lab's OGM-GE** ([gewu-lab/ogm-ge_cvpr2022](https://github.com/gewu-lab/ogm-ge_cvpr2022)). Please refer to those repositories for downloading raw data and extracting frames/audio. After preprocessing, arrange the data so the loaders can find it, as described below.
+SPICE follows the same dataset preprocessing protocol as **GeWU-Lab's OGM-GE** ([gewu-lab/ogm-ge_cvpr2022](https://github.com/gewu-lab/ogm-ge_cvpr2022)). Please refer to those repositories for downloading raw data and extracting frames/audio. After preprocessing, arrange the data so the loaders can find it, as described below.
 
 ### CREMA-D
 Expects (relative to `CREMA-D/`):
